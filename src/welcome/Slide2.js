@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
-const Slide1 = ({ navigation }) => {
+const Slide2 = ({ navigation }) => {
   return (
     <View
       style={{ flex: 1, justifyContent: "space-between", alignItems: "center" }}
@@ -16,10 +16,10 @@ const Slide1 = ({ navigation }) => {
       </TouchableOpacity>
       <View style={{ marginHorizontal: 30 }}>
         <Text style={{ textAlign: "center", fontSize: 20, fontWeight: "bold" }}>
-          Online Learning
+          Learn from Anytime
         </Text>
         <Text style={{ marginTop: 20, textAlign: "center", fontSize: 16 }}>
-          We Provide Classes Online Classes and Pre Recorded Leactures.!
+          Booked or Same the Lectures for Future
         </Text>
       </View>
       <TouchableOpacity
@@ -32,7 +32,7 @@ const Slide1 = ({ navigation }) => {
           left: 100,
           elevation: 4,
         }}
-        onPress={() => navigation.navigate("Slide2")}
+        onPress={() => navigation.navigate("Slide3")}
       >
         <FontAwesome
           name="arrow-right"
@@ -45,4 +45,4 @@ const Slide1 = ({ navigation }) => {
   );
 };
 
-export default Slide1;
+export default Slide2;
