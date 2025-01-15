@@ -76,7 +76,11 @@ const MainScreen = ({ navigation }) => {
 
       {/* Top Mentor Section */}
       <Text style={styles.sectionTitle}>Top Mentor</Text>
-      <ScrollView horizontal style={styles.mentorContainer}>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={styles.mentorContainer}
+      >
         <View style={styles.mentorCard}>
           <Text>Sonja</Text>
         </View>
