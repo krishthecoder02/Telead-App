@@ -63,6 +63,7 @@ const SignIn = ({ navigation }) => {
             padding: 4,
             borderRadius: 20,
           }}
+          onPress={() => navigation.navigate("MainScreen")}
         >
           <Text style={{ color: "white", fontWeight: "bold" }}>
             Sign In with Your Account

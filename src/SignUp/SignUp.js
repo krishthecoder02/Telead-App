@@ -71,9 +71,8 @@ const SignUpScreen = ({ navigation }) => {
             styles.signUpIcon,
             {
               backgroundColor: "#fff",
-              padding: 8,
+              padding: 6,
               borderRadius: 50,
-              left: 130,
             },
           ]}
         />

@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
-const MainScreen = () => {
+const MainScreen = ({ navigation }) => {
   return (
     <ScrollView style={styles.container}>
       {/* Header Section */}
@@ -41,7 +41,9 @@ const MainScreen = () => {
       {/* Categories Section */}
       <View style={styles.categoriesSection}>
         <Text style={styles.sectionTitle}>Categories</Text>
-        <Text style={styles.seeAll}>SEE ALL</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("CategoryScreen")}>
+          <Text style={styles.seeAll}>SEE ALL</Text>
+        </TouchableOpacity>
       </View>
       <Text style={styles.category}>
         3D Design | Arts & Humanities | Graphic Design
@@ -63,10 +65,18 @@ const MainScreen = () => {
         <Text style={styles.courseTitle}>Advertisement Basics</Text>
         <Text style={styles.coursePrice}>$42 | ⭐️ | </Text>
       </View>
+      <View style={styles.courseCard}>
+        <Text style={styles.courseTitle}>Advertisement Basics</Text>
+        <Text style={styles.coursePrice}>$42 | ⭐️ | </Text>
+      </View>
+      <View style={styles.courseCard}>
+        <Text style={styles.courseTitle}>Advertisement Basics</Text>
+        <Text style={styles.coursePrice}>$42 | ⭐️ | </Text>
+      </View>
 
       {/* Top Mentor Section */}
       <Text style={styles.sectionTitle}>Top Mentor</Text>
-      <View style={styles.mentorContainer}>
+      <ScrollView horizontal style={styles.mentorContainer}>
         <View style={styles.mentorCard}>
           <Text>Sonja</Text>
         </View>
@@ -79,7 +89,17 @@ const MainScreen = () => {
         <View style={styles.mentorCard}>
           <Text>Castaldo</Text>
         </View>
-      </View>
+        <View style={styles.mentorCard}>
+          <Text>Castaldo</Text>
+        </View>
+        <View style={styles.mentorCard}>
+          <Text>Castaldo</Text>
+        </View>
+
+        <View style={styles.mentorCard}>
+          <Text>Castaldo</Text>
+        </View>
+      </ScrollView>
     </ScrollView>
   );
 };
@@ -135,14 +155,17 @@ const styles = StyleSheet.create({
   coursePrice: { color: "gray" },
   mentorContainer: {
     flexDirection: "row",
-    justifyContent: "space-around",
+    // justifyContent: "space-around",
     marginTop: 10,
+    marginBottom: 60,
   },
   mentorCard: {
     padding: 20,
-    backgroundColor: "#ddd",
+    backgroundColor: "#fff",
     borderRadius: 10,
     alignItems: "center",
+    marginLeft: 10,
+    elevation: 3,
   },
 });
 
