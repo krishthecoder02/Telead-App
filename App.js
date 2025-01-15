@@ -7,7 +7,9 @@ import Slide1 from "./src/welcome/Slide1";
 import Slide2 from "./src/welcome/Slide2";
 import Slide3 from "./src/welcome/Slide3";
 import SignIn from "./src/SignUp/SignIn";
-import SignUp from "./src/SignUp/SignUp";
+
+import SignUpScreen from "./src/SignUp/SignUp";
+import MainScreen from "./src/home/MainScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,7 +22,8 @@ const AppNavigator = () => {
         <Stack.Screen name="Slide2" component={Slide2} />
         <Stack.Screen name="Slide3" component={Slide3} />
         <Stack.Screen name="SignIn" component={SignIn} />
-        <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="SignUp" component={SignUpScreen} />
+        <Stack.Screen name="MainScreen" component={MainScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
