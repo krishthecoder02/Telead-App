@@ -52,7 +52,9 @@ const MainScreen = ({ navigation }) => {
       {/* Popular Courses Section */}
       <View style={styles.categoriesSection}>
         <Text style={styles.sectionTitle}>Popular Courses</Text>
-        <Text style={styles.seeAll}>SEE ALL</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("PopularCourses")}>
+          <Text style={styles.seeAll}>SEE ALL</Text>
+        </TouchableOpacity>
       </View>
 
       {/* Course Cards */}

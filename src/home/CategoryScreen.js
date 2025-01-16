@@ -12,10 +12,10 @@ import { FontAwesome } from "@expo/vector-icons";
 const categories = [
   { id: "1", name: "3D Design", icon: "cube" },
   { id: "2", name: "Graphic Design", icon: "paint-brush" },
-  { id: "3", name: "Web Development", icon: "laptop-code" },
-  { id: "4", name: "SEO & Marketing", icon: "chart-line" },
+  { id: "3", name: "Web Development", icon: "code" },
+  { id: "4", name: "SEO & Marketing", icon: "globe" },
   { id: "5", name: "Finance & Accounting", icon: "university" },
-  { id: "6", name: "Personal Development", icon: "user-graduate" },
+  { id: "6", name: "Personal Development", icon: "thumbs-up" },
   { id: "7", name: "Office Productivity", icon: "cogs" },
   { id: "8", name: "HR Management", icon: "users" },
 ];
