@@ -24,7 +24,10 @@ const MainScreen = ({ navigation }) => {
       {/* Search Bar */}
       <View style={styles.searchBarContainer}>
         <TextInput placeholder="Search for.." style={styles.searchInput} />
-        <TouchableOpacity style={styles.filterButton}>
+        <TouchableOpacity
+          style={styles.filterButton}
+          onPress={() => navigation.navigate("FilterScreen")}
+        >
           <FontAwesome name="sliders" size={20} color="white" />
         </TouchableOpacity>
       </View>
