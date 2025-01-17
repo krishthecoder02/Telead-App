@@ -13,6 +13,7 @@ import MainScreen from "./src/home/MainScreen";
 import CategoryScreen from "./src/home/CategoryScreen";
 import PopularCourses from "./src/home/PopularCourse";
 import FilterScreen from "./src/home/FilterScreen";
+import NotificationScreen from "./src/home/NotificationScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -30,6 +31,10 @@ const AppNavigator = () => {
         <Stack.Screen name="CategoryScreen" component={CategoryScreen} />
         <Stack.Screen name="PopularCourses" component={PopularCourses} />
         <Stack.Screen name="FilterScreen" component={FilterScreen} />
+        <Stack.Screen
+          name="NotificationScreen"
+          component={NotificationScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

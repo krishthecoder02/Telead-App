@@ -14,8 +14,17 @@ const MainScreen = ({ navigation }) => {
   return (
     <ScrollView style={styles.container}>
       {/* Header Section */}
-      <View style={styles.header}>
+      <View style={[styles.header]}>
         <Text style={styles.headerText}>Hi, Krishna</Text>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("NotificationScreen")}
+        >
+          <FontAwesome
+            name="bell-o"
+            size={24}
+            style={{ textAlign: "right", marginTop: -26 }}
+          />
+        </TouchableOpacity>
         <Text style={styles.subHeaderText}>
           What Would you like to learn Today?
         </Text>
