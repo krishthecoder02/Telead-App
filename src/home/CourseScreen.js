@@ -3,12 +3,12 @@ import { ScrollView, StyleSheet, View } from "react-native";
 import { Appbar, Card, Button, Text, IconButton } from "react-native-paper";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
-export default function CourseScreen() {
+export default function CourseScreen({ navigation }) {
   return (
     <View style={{ flex: 1 }}>
       {/* Appbar */}
       <Appbar.Header>
-        <Appbar.BackAction onPress={() => {}} />
+        <Appbar.BackAction onPress={() => navigation.navigate("MainScreen")} />
         <Appbar.Content title="Course" />
       </Appbar.Header>
 
