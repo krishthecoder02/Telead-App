@@ -70,10 +70,13 @@ const MainScreen = ({ navigation }) => {
       </View>
 
       {/* Course Cards */}
-      <View style={styles.courseCard}>
+      <TouchableOpacity
+        style={styles.courseCard}
+        onPress={() => navigation.navigate("CourseScreen")}
+      >
         <Text style={styles.courseTitle}>Graphic Design Advanced</Text>
         <Text style={styles.coursePrice}>$28 | 4.2 | 7830 Std</Text>
-      </View>
+      </TouchableOpacity>
 
       <View style={styles.courseCard}>
         <Text style={styles.courseTitle}>Advertisement Basics</Text>
