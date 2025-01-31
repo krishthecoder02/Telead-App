@@ -140,5 +140,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
     marginVertical: 20,
     borderRadius: 10,
+    backgroundColor: "#0961f5",
   },
 });

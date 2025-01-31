@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   iconWrapper: {
-    backgroundColor: "#6200ee",
+    backgroundColor: "#0961f5",
     padding: 15,
     borderRadius: 50,
     marginRight: 10,

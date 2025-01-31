@@ -209,6 +209,7 @@ const styles = StyleSheet.create({
   },
   enrollButtonContent: {
     height: 48,
+    backgroundColor: "#0961f5",
   },
 });
 
