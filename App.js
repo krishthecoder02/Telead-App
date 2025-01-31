@@ -15,6 +15,7 @@ import PopularCourses from "./src/home/PopularCourse";
 import FilterScreen from "./src/home/FilterScreen";
 import NotificationScreen from "./src/home/NotificationScreen";
 import CourseScreen from "./src/home/CourseScreen";
+import AboutCourse from "./src/home/AboutCourse";
 
 const Stack = createNativeStackNavigator();
 
@@ -37,6 +38,7 @@ const AppNavigator = () => {
           name="NotificationScreen"
           component={NotificationScreen}
         />
+        <Stack.Screen name="AboutScreen" component={AboutCourse} />
       </Stack.Navigator>
     </NavigationContainer>
   );

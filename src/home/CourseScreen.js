@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, TouchableOpacity, View } from "react-native";
 import { Appbar, Card, Button, Text, IconButton } from "react-native-paper";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
@@ -32,14 +32,16 @@ export default function CourseScreen({ navigation }) {
         </Card>
 
         {/* Course Sections */}
-        <Card style={styles.card}>
-          <Card.Content>
-            <Text style={styles.sectionTitle}>About</Text>
-            <Text style={styles.sectionText}>
-              This course covers graphic design principles...
-            </Text>
-          </Card.Content>
-        </Card>
+        <TouchableOpacity onPress={() => navigation.navigate("AboutScreen")}>
+          <Card style={styles.card}>
+            <Card.Content>
+              <Text style={styles.sectionTitle}>About</Text>
+              <Text style={styles.sectionText}>
+                This course covers graphic design principles...
+              </Text>
+            </Card.Content>
+          </Card>
+        </TouchableOpacity>
 
         {/* Curriculum Section */}
         <Card style={styles.card}>
