@@ -1,6 +1,13 @@
 import React from "react";
 import { View, StyleSheet, ScrollView } from "react-native";
-import { Card, Text, Button, Title, Subheading } from "react-native-paper";
+import {
+  Card,
+  Text,
+  Button,
+  Title,
+  Subheading,
+  IconButton,
+} from "react-native-paper";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 const NotificationScreen = () => {
@@ -20,6 +27,13 @@ const NotificationScreen = () => {
 
   return (
     <ScrollView style={styles.container}>
+      <IconButton
+        icon="arrow-left"
+        size={24}
+        // onPress={() => {
+        //   navigation.navigate("MainScreen");
+        // }}
+      />
       <Text style={styles.header}>Notifications</Text>
 
       <Text style={styles.dateHeader}>Today</Text>
