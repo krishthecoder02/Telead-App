@@ -33,7 +33,7 @@ const CategoryScreen = ({ navigation }) => {
       {/* Header Section */}
       <View style={styles.header}>
         <TouchableOpacity onPress={() => navigation.navigate("MainScreen")}>
-          <FontAwesome name="arrow-left" size={24} color="black" />
+          <FontAwesome name="arrow-left" size={20} color="black" />
         </TouchableOpacity>
         <Text style={styles.headerText}>All Category</Text>
       </View>
