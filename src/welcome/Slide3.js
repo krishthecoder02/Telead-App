@@ -33,7 +33,7 @@ const Slide3 = ({ navigation }) => {
         style={{
           backgroundColor: "#0961f5",
           top: -50,
-          padding: 4,
+          padding: 8,
           paddingHorizontal: 16,
           borderRadius: 15,
           left: 100,
@@ -55,7 +55,7 @@ const Slide3 = ({ navigation }) => {
           style={{
             alignSelf: "center",
             backgroundColor: "white",
-            padding: 8,
+            padding: 10,
             borderRadius: 50,
             textAlign: "right",
           }}

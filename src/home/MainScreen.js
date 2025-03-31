@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 20,
   },
-  offerTitle: { fontSize: 18, fontWeight: "bold", color: "white" },
+  offerTitle: { fontSize: 18, fontWeight: "bold", color: "#90EE90" },
   offerText: { fontSize: 22, fontWeight: "bold", color: "white" },
   offerSubText: { color: "white" },
   categoriesSection: {
@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     // justifyContent: "space-around",
     marginTop: 10,
-    marginBottom: 60,
+    marginBottom: 80,
   },
   mentorCard: {
     padding: 20,
@@ -187,6 +187,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginLeft: 10,
     elevation: 3,
+    marginBottom: 40,
   },
 });
 

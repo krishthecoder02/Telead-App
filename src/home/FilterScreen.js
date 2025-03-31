@@ -202,6 +202,7 @@ const styles = StyleSheet.create({
   },
   checkbox: {
     paddingVertical: 4,
+    color: "#007BFF",
   },
   applyButton: {
     backgroundColor: "#007BFF",

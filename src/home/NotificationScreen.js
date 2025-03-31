@@ -1,21 +1,20 @@
 import React from "react";
 import { View, StyleSheet, ScrollView } from "react-native";
-import {
-  Card,
-  Text,
-  Button,
-  Title,
-  Subheading,
-  IconButton,
-} from "react-native-paper";
+import { Card, Text, Title, Subheading, IconButton } from "react-native-paper";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
-const NotificationScreen = () => {
+const NotificationScreen = ({ navigation }) => {
   const renderNotification = (title, description, date, icon) => (
     <Card style={styles.notificationCard}>
       <Card.Content>
         <View style={styles.iconWrapper}>
-          <Icon name={icon} size={30} color="#fff" style={styles.icon} />
+          <Icon
+            name={icon}
+            size={30}
+            color="#fff"
+            style={styles.icon}
+            onPress={() => navigation.navigate("MainScreen")}
+          />
         </View>
         <View style={styles.textWrapper}>
           <Title>{title}</Title>
@@ -30,9 +29,9 @@ const NotificationScreen = () => {
       <IconButton
         icon="arrow-left"
         size={24}
-        // onPress={() => {
-        //   navigation.navigate("MainScreen");
-        // }}
+        onPress={() => {
+          navigation.navigate("MainScreen");
+        }}
       />
       <Text style={styles.header}>Notifications</Text>
 

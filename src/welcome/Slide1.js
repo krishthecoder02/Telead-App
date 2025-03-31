@@ -26,8 +26,8 @@ const Slide1 = ({ navigation }) => {
         style={{
           backgroundColor: "#0961f5",
           top: -50,
-          padding: 10,
-          paddingHorizontal: 35,
+          padding: 14,
+          paddingHorizontal: 48,
           borderRadius: 15,
           left: 100,
           elevation: 4,
