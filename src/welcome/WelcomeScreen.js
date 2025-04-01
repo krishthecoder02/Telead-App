@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 
 const WelcomeScreen = ({ navigation }) => {
@@ -10,6 +11,7 @@ const WelcomeScreen = ({ navigation }) => {
         alignItems: "center",
       }}
     >
+      <StatusBar backgroundColor="white" barStyle="light" />
       <TouchableOpacity onPress={() => navigation.navigate("Slide1")}>
         <Image
           source={require("../../assets/LOGO.png")}

@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   categoriesGrid: { justifyContent: "space-between" },
-  categoryItem: { flex: 1, alignItems: "center", margin: 10 },
+  categoryItem: { flex: 1, alignItems: "center", margin: 10, elevation: 10 },
   categoryText: { marginTop: 10, fontSize: 16, fontWeight: "500" },
 });
 

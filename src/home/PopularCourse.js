@@ -64,7 +64,7 @@ const PopularCourses = ({ navigation }) => {
   ];
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       {/* Header */}
       <View style={styles.header}>
         <IconButton
@@ -127,7 +127,7 @@ const PopularCourses = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F5F5F5",
+    backgroundColor: "#ffff",
     paddingHorizontal: 16,
     marginTop: 30,
   },

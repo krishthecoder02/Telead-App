@@ -136,12 +136,12 @@ const styles = StyleSheet.create({
   heading: { fontSize: 20, fontWeight: "bold" },
   description: { fontSize: 14, color: "#6b7280", marginBottom: 16 },
   input: {
-    borderWidth: 1,
+    // borderWidth: 5,
     padding: 12,
     borderRadius: 8,
     backgroundColor: "white",
     marginBottom: 16,
-    elevation: 5,
+    elevation: 14,
   },
   termsContainer: {
     flexDirection: "row",
