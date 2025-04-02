@@ -8,6 +8,7 @@ import {
   FlatList,
 } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
+import { IconButton } from "react-native-paper";
 
 const categories = [
   { id: "1", name: "3D Design", icon: "cube" },
@@ -32,9 +33,14 @@ const CategoryScreen = ({ navigation }) => {
     <View style={styles.container}>
       {/* Header Section */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.navigate("MainScreen")}>
+        {/* <TouchableOpacity onPress={() => navigation.navigate("MainScreen")}>
           <FontAwesome name="arrow-left" size={20} color="black" />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
+        <IconButton
+          icon="arrow-left"
+          size={24}
+          onPress={() => navigation.navigate("MainScreen")}
+        />
         <Text style={styles.headerText}>All Category</Text>
       </View>
 
@@ -82,7 +88,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   categoriesGrid: { justifyContent: "space-between" },
-  categoryItem: { flex: 1, alignItems: "center", margin: 10, elevation: 10 },
+  categoryItem: { flex: 1, alignItems: "center", margin: 10 },
   categoryText: { marginTop: 10, fontSize: 16, fontWeight: "500" },
 });
 
